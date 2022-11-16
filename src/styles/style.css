@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Reem Kufi Fun';
+    overflow: hidden;
+}
+
+.Applight {
+    text-align: center;
+    align-items: center;
+    position:absolute;
+    height: 4000px;
+    width: 100%;
+    background-color: azure;  
+    color:rgb(31, 31, 31);
+}
+
+.Appdark {
+    text-align: center;
+    align-items: center;
+    position:absolute;
+    height: 4000px;
+    width: 100%;
+    background-color: rgb(31, 31, 31);  
+    color:azure;
+}
+
+p {
+    margin-top:15%;
+    font-size: 25px;
+}
+
+.loaderlight{
+    margin:auto;
+    margin-top: 3%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px dashed rgb(31, 31, 31);
+    animation: rotate 2s infinite linear;
+}
+
+.loaderdark{
+    margin:auto;
+    margin-top: 3%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px dashed azure;
+    animation: rotate 3s infinite linear;
+}
+
+
+@keyframes rotate{
+    from{
+        transform:rotate(0deg) 
+    }
+    to {
+        transform:rotate(360deg) 
+    }
+}
+
+.btnlight{
+    margin-top: 3%;
+    border:0;
+    border:2px solid rgb(31, 31, 31);
+    background-color: azure;
+    color: rgb(31, 31, 31);
+    padding:5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btndark{
+    margin-top: 3%;
+    border:0;
+    border:2px solid azure;
+    background-color: rgb(31, 31, 31);
+    color: azure;
+    padding:5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
